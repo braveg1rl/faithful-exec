@@ -12,7 +12,9 @@
     "url": "git://github.com/meryn/faithful-exec.git"
   },
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "make-promise": "0.0.1"
+  },
   "devDependencies": {
     "coffee-script": "~1.6.2",
     "mocha": "~1.9.0"
