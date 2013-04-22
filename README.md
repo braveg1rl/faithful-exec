@@ -1,8 +1,15 @@
 # faithful-exec [![Build Status](https://travis-ci.org/meryn/faithful-exec.png?branch=master)](https://travis-ci.org/meryn/faithful-exec) [![Dependency Status](https://david-dm.org/meryn/faithful-exec.png)](https://david-dm.org/meryn/faithful-exec)
 
-Wraps child_process.exec, returning a promise.
+Wraps `child_process.exec`, returning a promise.
 
-## Usage
+faithful-exec exports a single function that lets you execute system commands via `child_process.exec`. It adapts the interface of `exec` as follows:
+
+* When the command succeeds, the promise gets fulfilled with a `result` object that has two properties, `stderr` and `stdout`.
+* When the command fails, the error object returned by `child_process.exec` gets extended with two properties: `stderr` and `stdout`.
+
+This way, you always have access to a command's full output, regardless of what happens.
+
+Like `child_process.exec`, faithful-exec also lets you set options through a optional second argument.
 
 ## Credits
 

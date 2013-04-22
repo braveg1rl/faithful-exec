@@ -1,7 +1,16 @@
 {
   "name": "faithful-exec",
   "description": "Wraps child_process.exec, returning a promise.",
-  "keywords": [],
+  "keywords": [
+    "stdout",
+    "stderr",
+    "output",
+    "results",
+    "commands",
+    "run",
+    "promise",
+    "promises"
+  ],
   "version": "0.0.0",
   "author": "Meryn Stol <merynstol@gmail.com>",
   "license": "MIT",
