@@ -1,5 +1,7 @@
 # faithful-exec [![Build Status](https://travis-ci.org/meryn/faithful-exec.png?branch=master)](https://travis-ci.org/meryn/faithful-exec) [![Dependency Status](https://david-dm.org/meryn/faithful-exec.png)](https://david-dm.org/meryn/faithful-exec)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/braveg1rl/faithful-exec.svg)](https://greenkeeper.io/)
+
 Wraps `child_process.exec`, returning a promise.
 
 faithful-exec exports a single function that lets you execute system commands via `child_process.exec`. It adapts the interface of `exec` as follows:
